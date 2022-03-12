@@ -1,13 +1,15 @@
 <template>
   <NavBar />
+  <AboutSection />
 </template>
 
 <script>
 import NavBar from "./components/NavBar.vue";
+import AboutSection from "./components/about/AboutSection.vue";
 
 export default {
   name: "App",
-  components: { NavBar },
+  components: { NavBar, AboutSection },
 };
 </script>
 
@@ -26,25 +28,41 @@ body {
   box-sizing: border-box;
 }
 
+h1,
 .h1 {
   font-size: 91.55px;
 }
+h2,
 .h2 {
   font-size: 73.24px;
 }
+h3,
 .h3 {
   font-size: 58.59px;
 }
+h4,
 .h4 {
   font-size: 46.88px;
 }
+h5,
 .h5 {
   font-size: 37.5px;
 }
+h6,
 .h6 {
   font-size: 30px;
 }
 .captionText {
   font-size: 19.2px;
+}
+
+.bg-text-outline {
+  z-index: -1;
+  position: absolute;
+
+  color: white;
+  font-size: 192px;
+  text-shadow: 1px 1px 0 #aaa, -1px 1px 0 #aaa, -1px -1px 0 #aaa,
+    1px -1px 0 #aaa;
 }
 </style>
