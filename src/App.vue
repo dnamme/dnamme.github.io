@@ -1,10 +1,13 @@
 <template>
-  <h1>Hello world!</h1>
+  <NavBar />
 </template>
 
 <script>
+import NavBar from "./components/NavBar.vue";
+
 export default {
   name: "App",
+  components: { NavBar },
 };
 </script>
 
@@ -20,6 +23,7 @@ body {
 .bodyText {
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 24px;
+  box-sizing: border-box;
 }
 
 .h1 {
