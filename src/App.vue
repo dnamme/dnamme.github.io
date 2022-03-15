@@ -36,6 +36,11 @@ body {
   margin: 0;
 }
 
+body {
+  background-image: url("~@/assets/background.jpg");
+  background-repeat: repeat;
+}
+
 :root {
   --lighter-blue: #ebf8ff;
   --light-blue: #d0efff;
