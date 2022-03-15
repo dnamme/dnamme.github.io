@@ -18,10 +18,14 @@
           <p class="project-description">{{ project.desc }}</p>
 
           <div v-if="project.website">
-            <a :href="project.website" class="project-link">Website</a>
+            <a :href="project.website" target="_blank" class="project-link"
+              >Website</a
+            >
           </div>
           <div v-if="project.github">
-            <a :href="project.github" class="project-link">GitHub repository</a>
+            <a :href="project.github" target="_blank" class="project-link"
+              >GitHub repository</a
+            >
           </div>
         </div>
       </div>
@@ -46,10 +50,14 @@
           <p class="project-description">{{ project.desc }}</p>
 
           <div v-if="project.website">
-            <a :href="project.website" class="project-link">Play Game</a>
+            <a :href="project.website" target="_blank" class="project-link"
+              >Play Game</a
+            >
           </div>
           <div v-if="project.github">
-            <a :href="project.github" class="project-link">GitHub repository</a>
+            <a :href="project.github" target="_blank" class="project-link"
+              >GitHub repository</a
+            >
           </div>
         </div>
       </div>
