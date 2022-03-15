@@ -3,6 +3,7 @@
   <AboutSection />
   <ProjectsSection />
   <AchievementsSection />
+  <ExperienceSection />
 </template>
 
 <script>
@@ -10,10 +11,17 @@ import NavBar from "./components/NavBar.vue";
 import AboutSection from "./components/about/AboutSection.vue";
 import ProjectsSection from "./components/projects/ProjectsSection.vue";
 import AchievementsSection from "./components/achievements/AchievementsSection.vue";
+import ExperienceSection from "./components/experience/ExperienceSection.vue";
 
 export default {
   name: "App",
-  components: { NavBar, AboutSection, ProjectsSection, AchievementsSection },
+  components: {
+    NavBar,
+    AboutSection,
+    ProjectsSection,
+    AchievementsSection,
+    ExperienceSection,
+  },
 };
 </script>
 
