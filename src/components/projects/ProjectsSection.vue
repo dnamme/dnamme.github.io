@@ -19,13 +19,13 @@
 
           <div v-if="project.website">
             <a :href="project.website" target="_blank" class="project-link"
-              >Website</a
-            >
+              >Website <ExternalLink :color="'#1167B1'"
+            /></a>
           </div>
           <div v-if="project.github">
             <a :href="project.github" target="_blank" class="project-link"
-              >GitHub repository</a
-            >
+              >GitHub repository <ExternalLink :color="'#1167B1'"
+            /></a>
           </div>
         </div>
       </div>
@@ -51,13 +51,13 @@
 
           <div v-if="project.website">
             <a :href="project.website" target="_blank" class="project-link"
-              >Play Game</a
-            >
+              >Play Game <ExternalLink :color="'#1167B1'"
+            /></a>
           </div>
           <div v-if="project.github">
             <a :href="project.github" target="_blank" class="project-link"
-              >GitHub repository</a
-            >
+              >GitHub repository <ExternalLink :color="'#1167B1'"
+            /></a>
           </div>
         </div>
       </div>
@@ -66,8 +66,11 @@
 </template>
 
 <script>
+import ExternalLink from "./../general/ExternalLink.vue";
+
 export default {
   name: "ProjectsSection",
+  components: { ExternalLink },
   data() {
     return {
       web_dev_projs: [
