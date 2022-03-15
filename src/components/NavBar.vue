@@ -1,11 +1,11 @@
 <template>
   <nav>
     <div id="icon" />
-    <a href="">About</a>
-    <a href="">Projects</a>
-    <a href="">Achievements</a>
-    <a href="">Experience</a>
-    <a href="">Contact</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
   </nav>
 </template>
 
@@ -35,6 +35,10 @@ nav {
 
 nav > *:not(:nth-child(1)) {
   margin-left: 48px;
+
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 #icon {
