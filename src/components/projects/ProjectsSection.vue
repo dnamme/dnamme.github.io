@@ -133,7 +133,7 @@ export default {
   grid-template-areas: "img img img txt txt";
   column-gap: 32px;
 
-  margin: 0 0 48px;
+  margin: 0 100px 48px;
 }
 
 .webdev-project-wrapper:last-child {
@@ -167,7 +167,7 @@ export default {
   grid-template-areas: "img txt txt";
   column-gap: 100px;
 
-  margin: 0 0 48px;
+  margin: 0 100px 48px;
 }
 
 .gamedev-project-wrapper:last-child {
