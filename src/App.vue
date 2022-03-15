@@ -1,15 +1,17 @@
 <template>
   <NavBar />
   <AboutSection />
+  <ProjectsSection />
 </template>
 
 <script>
 import NavBar from "./components/NavBar.vue";
 import AboutSection from "./components/about/AboutSection.vue";
+import ProjectsSection from "./components/projects/ProjectsSection.vue";
 
 export default {
   name: "App",
-  components: { NavBar, AboutSection },
+  components: { NavBar, AboutSection, ProjectsSection },
 };
 </script>
 
@@ -21,8 +23,23 @@ body {
   margin: 0;
 }
 
+:root {
+  --lighter-blue: #ebf8ff;
+  --light-blue: #d0efff;
+  --primary-blue: #2a9df4;
+  --dark-blue: #187bcd;
+  --darker-blue: #1167b1;
+  --navy-blue: #03254c;
+}
+
+.main {
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
 *,
 .bodyText {
+  color: var(--navy-blue);
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 24px;
   box-sizing: border-box;
@@ -64,5 +81,9 @@ h6,
   font-size: 192px;
   text-shadow: 1px 1px 0 #aaa, -1px 1px 0 #aaa, -1px -1px 0 #aaa,
     1px -1px 0 #aaa;
+}
+
+.accented-heading {
+  color: var(--dark-blue);
 }
 </style>

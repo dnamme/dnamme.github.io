@@ -1,5 +1,5 @@
 <template>
-  <div id="about">
+  <div id="about" class="main">
     <h2>Hello,</h2>
     <h1 class="title">I am Emman</h1>
     <h4>
@@ -18,9 +18,6 @@ export default {
 <style scoped>
 #about {
   max-width: 1080px;
-  min-height: 100vh;
-
-  margin: 0 auto;
 
   display: flex;
   flex-flow: column nowrap;
