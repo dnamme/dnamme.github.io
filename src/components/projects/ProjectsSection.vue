@@ -1,10 +1,10 @@
 <template>
   <div id="projects" class="main">
     <div id="webdev">
-      <h1 class="sticky-title">
+      <h2 class="sticky-title">
         I make
-        <span class="h1 accented-heading">websites</span>.
-      </h1>
+        <span class="h2 accented-heading">websites</span>.
+      </h2>
 
       <div
         v-for="(project, index) in web_dev_projs"
@@ -32,9 +32,9 @@
     </div>
 
     <div id="gamedev" class="main">
-      <h1 class="sticky-title">
-        I create <span class="h1 accented-heading">games</span>.
-      </h1>
+      <h2 class="sticky-title">
+        I create <span class="h2 accented-heading">games</span>.
+      </h2>
 
       <div
         v-for="(project, index) in game_dev_projs"

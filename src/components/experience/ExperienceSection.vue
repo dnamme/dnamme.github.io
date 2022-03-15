@@ -1,8 +1,8 @@
 <template>
   <div id="experience" class="main">
-    <h1 class="sticky-title">
-      ... <span class="h1 accented-heading">among other things</span>.
-    </h1>
+    <h2 class="sticky-title">
+      ... <span class="h2 accented-heading">among other things</span>.
+    </h2>
 
     <div
       v-for="(experience, index) in experiences"

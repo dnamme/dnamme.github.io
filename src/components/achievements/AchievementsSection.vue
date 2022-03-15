@@ -1,8 +1,8 @@
 <template>
   <div id="achievements" class="main">
-    <h1 class="sticky-title">
-      I <span class="h1 accented-heading">compete</span>.
-    </h1>
+    <h2 class="sticky-title">
+      I <span class="h2 accented-heading">compete</span>.
+    </h2>
 
     <div id="achievements-wrapper">
       <div
