@@ -4,6 +4,7 @@
   <ProjectsSection />
   <AchievementsSection />
   <ExperienceSection />
+  <ContactSection />
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import AboutSection from "./components/about/AboutSection.vue";
 import ProjectsSection from "./components/projects/ProjectsSection.vue";
 import AchievementsSection from "./components/achievements/AchievementsSection.vue";
 import ExperienceSection from "./components/experience/ExperienceSection.vue";
+import ContactSection from "./components/contact/ContactSection.vue";
 
 export default {
   name: "App",
@@ -21,6 +23,7 @@ export default {
     ProjectsSection,
     AchievementsSection,
     ExperienceSection,
+    ContactSection,
   },
 };
 </script>
