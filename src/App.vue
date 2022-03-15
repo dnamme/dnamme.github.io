@@ -2,16 +2,18 @@
   <NavBar />
   <AboutSection />
   <ProjectsSection />
+  <AchievementsSection />
 </template>
 
 <script>
 import NavBar from "./components/NavBar.vue";
 import AboutSection from "./components/about/AboutSection.vue";
 import ProjectsSection from "./components/projects/ProjectsSection.vue";
+import AchievementsSection from "./components/achievements/AchievementsSection.vue";
 
 export default {
   name: "App",
-  components: { NavBar, AboutSection, ProjectsSection },
+  components: { NavBar, AboutSection, ProjectsSection, AchievementsSection },
 };
 </script>
 
