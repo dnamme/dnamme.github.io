@@ -76,13 +76,13 @@ export default {
       web_dev_projs: [
         {
           title: "Enlistment Scheduler",
-          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laboriosam porro voluptatibus, nobis non quidem? Reiciendis aliquid esse eveniet aliquam cum corrupti asperiores temporibus nam, voluptates consectetur dolore, sit quo.",
+          desc: "This web application makes enlistment and scheduling a lot easier for Ateneo students by showing a preview of the user's schedule as they enter and choose classes.",
           website: "https://dnamme.github.io/enlistment-scheduler",
           github: "https://github.com/dnamme/enlistment-scheduler",
         },
         {
           title: "TakBlue",
-          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laboriosam porro voluptatibus, nobis non quidem? Reiciendis aliquid esse eveniet aliquam cum corrupti asperiores temporibus nam, voluptates consectetur dolore, sit quo.",
+          desc: "TakBlue is a small application for Ateneo students that calculates the distance and the time that it takes to go from one class to another.",
           website: "https://dnamme.github.io/takblue",
           github: "https://github.com/dnamme/takblue",
         },
@@ -90,26 +90,26 @@ export default {
       game_dev_projs: [
         {
           title: "Race to Twelve",
-          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laboriosam porro voluptatibus, nobis non quidem? Reiciendis aliquid esse eveniet aliquam cum corrupti asperiores temporibus nam, voluptates consectetur dolore, sit quo.",
+          desc: "The player and our smart AI each take turns stacking numbers from one to three. The first one to get a total of twelve wins the round, for a total of three rounds.",
           github: "https://github.com/dnamme/race-to-twelve",
         },
         {
           title: "Ma10mon: CS",
-          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laboriosam porro voluptatibus, nobis non quidem? Reiciendis aliquid esse eveniet aliquam cum corrupti asperiores temporibus nam, voluptates consectetur dolore, sit quo.",
+          desc: "Set in an alternate universe, three daring students try to defeat an evil being.",
           website: "https://dnamme.github.io/math-10-integrating-project",
           github: "https://github.com/dnamme/math-10-integrating-project",
         },
         {
           title: "Slime'D",
-          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laboriosam porro voluptatibus, nobis non quidem? Reiciendis aliquid esse eveniet aliquam cum corrupti asperiores temporibus nam, voluptates consectetur dolore, sit quo.",
+          desc: "As a gravity-defying slimeball, the player must try to sruvive for as long as they can while avoiding spikes. This was made using Arduino.",
         },
         {
           title: "Skiula's Chamber",
-          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laboriosam porro voluptatibus, nobis non quidem? Reiciendis aliquid esse eveniet aliquam cum corrupti asperiores temporibus nam, voluptates consectetur dolore, sit quo.",
+          desc: "Skiula, the evil skeleton boss, has trapped these players inside his castle. Players must survive for a total of three minutes in order to win. Play singleplayer or win together with friends!",
         },
         {
           title: "Sample Animation",
-          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laboriosam porro voluptatibus, nobis non quidem? Reiciendis aliquid esse eveniet aliquam cum corrupti asperiores temporibus nam, voluptates consectetur dolore, sit quo.",
+          desc: "This features the day and night cycle of Japan's Mt. Fuji in all its glory.",
         },
       ],
     };
