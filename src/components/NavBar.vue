@@ -36,7 +36,6 @@ nav {
 nav > *:not(:nth-child(1)) {
   margin-left: 48px;
 
-  color: black;
   font-weight: 500;
   text-decoration: none;
 }
