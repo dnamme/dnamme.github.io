@@ -102,6 +102,6 @@ h6,
 }
 
 .accented-heading {
-  color: var(--dark-blue);
+  color: var(--primary-blue);
 }
 </style>
