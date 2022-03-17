@@ -16,6 +16,23 @@
     />
   </svg>
   <svg
+    v-if="size == 24"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M16.125 2.625H21.375V7.875M12.375 4.125H4.125V19.875H19.875V11.625L12.375 4.125ZM19.875 4.125L11.625 12.375L19.875 4.125Z"
+      :stroke="`${color}`"
+      stroke-width="2.25"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+
+  <svg
     v-if="size == 32"
     width="32"
     height="32"
