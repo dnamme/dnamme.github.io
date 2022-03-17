@@ -22,12 +22,12 @@
 
           <div v-if="project.website">
             <a :href="project.website" target="_blank" class="project-link"
-              >Website <ExternalLink :color="'#1167B1'"
+              >Website <ExternalLink color="#1167B1"
             /></a>
           </div>
           <div v-if="project.github">
             <a :href="project.github" target="_blank" class="project-link"
-              >GitHub repository <ExternalLink :color="'#1167B1'"
+              >GitHub repository <ExternalLink color="#1167B1"
             /></a>
           </div>
         </div>
@@ -152,6 +152,10 @@ export default {
 .project-link {
   color: var(--darker-blue);
   text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
 }
 
 .project-img-wrapper {
