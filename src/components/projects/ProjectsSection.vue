@@ -11,7 +11,10 @@
         :key="`web-project-${index}`"
         class="webdev-project-wrapper"
       >
-        <img src="https://via.placeholder.com/1600x900" />
+        <img
+          :src="require(`@/assets/${project.static_img}`)"
+          class="project-img-wrapper"
+        />
 
         <div class="webdev-project-details-wrapper">
           <h6 class="project-title">{{ project.title }}</h6>
@@ -41,7 +44,10 @@
         :key="`game-project-${index}`"
         class="gamedev-project-wrapper"
       >
-        <img src="https://via.placeholder.com/400x300" />
+        <img
+          :src="require(`@/assets/${project.static_img}`)"
+          class="project-img-wrapper"
+        />
 
         <div class="gamedev-project-details-wrapper">
           <img src="https://via.placeholder.com/1600x900" />
@@ -77,39 +83,46 @@ export default {
         {
           title: "Enlistment Scheduler",
           desc: "This web application makes enlistment and scheduling a lot easier for Ateneo students by showing a preview of the user's schedule as they enter and choose classes.",
+          static_img: "webdev/enlistment_scheduler.png",
           website: "https://dnamme.github.io/enlistment-scheduler",
           github: "https://github.com/dnamme/enlistment-scheduler",
         },
         {
           title: "TakBlue",
           desc: "TakBlue is a small application for Ateneo students that calculates the distance and the time that it takes to go from one class to another.",
+          static_img: "webdev/takblue.png",
           website: "https://dnamme.github.io/takblue",
           github: "https://github.com/dnamme/takblue",
         },
       ],
       game_dev_projs: [
         {
-          title: "Race to Twelve",
-          desc: "The player and our smart AI each take turns stacking numbers from one to three. The first one to get a total of twelve wins the round, for a total of three rounds.",
-          github: "https://github.com/dnamme/race-to-twelve",
-        },
-        {
           title: "Ma10mon: CS",
           desc: "Set in an alternate universe, three daring students try to defeat an evil being.",
+          static_img: "gamedev/ma10mon-cs.jpg",
           website: "https://dnamme.github.io/math-10-integrating-project",
           github: "https://github.com/dnamme/math-10-integrating-project",
         },
         {
+          title: "Race to Twelve",
+          desc: "The player and our smart AI each take turns stacking numbers from one to three. The first one to get a total of twelve wins the round, for a total of three rounds.",
+          static_img: "gamedev/race-to-twelve.png",
+          github: "https://github.com/dnamme/race-to-twelve",
+        },
+        {
           title: "Slime'D",
           desc: "As a gravity-defying slimeball, the player must try to sruvive for as long as they can while avoiding spikes. This was made using Arduino.",
+          static_img: "gamedev/slimed.jpg",
         },
         {
           title: "Skiula's Chamber",
           desc: "Skiula, the evil skeleton boss, has trapped these players inside his castle. Players must survive for a total of three minutes in order to win. Play singleplayer or win together with friends!",
+          static_img: "gamedev/skiulas-chamber.png",
         },
         {
           title: "Sample Animation",
           desc: "This features the day and night cycle of Japan's Mt. Fuji in all its glory.",
+          static_img: "gamedev/fuji.png",
         },
       ],
     };
@@ -132,6 +145,10 @@ export default {
 .project-link {
   color: var(--darker-blue);
   text-decoration: none;
+}
+
+.project-img-wrapper {
+  border-radius: 16px;
 }
 
 #webdev {
@@ -187,6 +204,11 @@ export default {
 
 .gamedev-project-wrapper > img {
   width: 100%;
+  max-height: 240px;
+
+  object-fit: cover;
+  object-position: 0 top;
+
   grid-area: img;
 }
 
