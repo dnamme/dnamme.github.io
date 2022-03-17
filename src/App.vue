@@ -102,7 +102,14 @@ h6,
 }
 
 .accented-heading {
-  color: var(--primary-blue);
+  color: transparent;
+
+  background: linear-gradient(
+    to right,
+    var(--darker-blue),
+    var(--primary-blue)
+  );
+  background-clip: text;
 }
 
 .sticky-title {
