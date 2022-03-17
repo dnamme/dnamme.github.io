@@ -47,10 +47,13 @@
         <img
           :src="require(`@/assets/${project.static_img}`)"
           class="project-img-wrapper"
+          :style="
+            project.static_img_style !== null ? project.static_img_style : {}
+          "
         />
 
         <div class="gamedev-project-details-wrapper">
-          <img src="https://via.placeholder.com/1600x900" />
+          <!-- <img src="https://via.placeholder.com/1600x900" /> -->
 
           <h6 class="project-title">{{ project.title }}</h6>
           <p class="project-description">{{ project.desc }}</p>
@@ -100,6 +103,9 @@ export default {
           title: "Ma10mon: CS",
           desc: "Set in an alternate universe, three daring students try to defeat an evil being.",
           static_img: "gamedev/ma10mon-cs.jpg",
+          static_img_style: {
+            maxHeight: "256px",
+          },
           website: "https://dnamme.github.io/math-10-integrating-project",
           github: "https://github.com/dnamme/math-10-integrating-project",
         },
@@ -113,6 +119,10 @@ export default {
           title: "Slime'D",
           desc: "As a gravity-defying slimeball, the player must try to sruvive for as long as they can while avoiding spikes. This was made using Arduino.",
           static_img: "gamedev/slimed.jpg",
+          static_img_style: {
+            maxHeight: "240px",
+            objectPosition: "0 -12px",
+          },
         },
         {
           title: "Skiula's Chamber",
@@ -204,7 +214,6 @@ export default {
 
 .gamedev-project-wrapper > img {
   width: 100%;
-  max-height: 240px;
 
   object-fit: cover;
   object-position: 0 top;
