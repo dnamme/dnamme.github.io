@@ -1,6 +1,8 @@
 <template>
   <nav ref="nav">
-    <div id="icon" />
+    <a href="#about" id="icon"
+      ><img src="@/assets/logo-white-border.png" ref="icon" alt="icon"
+    /></a>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#achievements">Achievements</a>
@@ -22,8 +24,10 @@ export default {
     handleScroll() {
       if (window.scrollY <= window.innerHeight) {
         this.$refs.nav.style.right = "0";
+        this.$refs.icon.style.opacity = "0";
       } else {
         this.$refs.nav.style.right = "calc(-100vw + 128px + 48px)";
+        this.$refs.icon.style.opacity = "1";
       }
     },
   },
@@ -56,6 +60,10 @@ nav:hover {
   background-color: #fafafc;
 }
 
+nav:hover #icon > img {
+  opacity: 0 !important;
+}
+
 nav > *:not(:nth-child(1)) {
   margin-left: 48px;
 
@@ -67,10 +75,16 @@ nav > *:not(:nth-child(1)) {
   width: 64px;
   height: 64px;
 
-  background-color: #c4c4c4;
-
   margin-right: auto;
 
-  clip-path: circle(50%);
+  background-image: url("./../assets/logo-transparent.png");
+  background-size: cover;
+}
+
+#icon > img {
+  width: 100%;
+
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 </style>
