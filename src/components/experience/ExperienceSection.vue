@@ -11,7 +11,16 @@
     >
       <h6 class="exp-title">{{ experience.title }}</h6>
       <p class="exp-details">
-        {{ experience.company }} &bull; {{ experience.date }}
+        <a
+          v-if="experience.company_website"
+          class="exp-company"
+          :href="experience.company_website"
+          target="_blank"
+          >{{ experience.company }} <ExternalLink color="#03254c"
+        /></a>
+        <span v-else> {{ experience.company }} </span>
+        &bull;
+        {{ experience.date }}
       </p>
 
       <p class="exp-description">{{ experience.desc }}</p>
@@ -20,26 +29,32 @@
 </template>
 
 <script>
+import ExternalLink from "./../general/ExternalLink.vue";
+
 export default {
   name: "ExperienceSection",
+  components: { ExternalLink },
   data() {
     return {
       experiences: [
         {
           title: "Digital Development Staffer, Developer",
           company: "The GUIDON",
+          company_website: "https://theguidon.com",
           date: "Since October 2021",
           desc: "Creates interactive articles under the organization using modern frameworks.",
         },
         {
           title: "Associate Vice President for Development Projects",
           company: "Computer Society of the Ateneo",
+          company_website: "https://compsat.org",
           date: "Since August 2021",
           desc: "Manages and oversees the teams who are assigned to client projects, and manages the website of the organization",
         },
         {
           title: "Senior Developer",
           company: "Google Developer Student Clubs Loyola",
+          company_website: "https://www.gdscloyola.org/",
           date: "Since August 2020",
           desc: "Created a mobile application to help students in their overall productivity needs.",
         },
@@ -83,6 +98,14 @@ export default {
   margin: 0 0 24px;
 
   font-weight: 500;
+}
+
+.experience-card .exp-details .exp-company {
+  text-decoration: none;
+}
+
+.experience-card .exp-details .exp-company:hover {
+  text-decoration: underline;
 }
 
 .experience-card .exp-description {
