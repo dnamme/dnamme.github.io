@@ -9,9 +9,15 @@
     </p>
 
     <div class="icons">
-      <a href=""><div></div></a>
-      <a href=""><div></div></a>
-      <a href=""><div></div></a>
+      <a href="https://linkedin.com/in/devnamme" target="_blank"
+        ><img src="@/assets/icons/linkedin.png"
+      /></a>
+      <a href="https://github.com/dnamme" target="_blank"
+        ><img src="@/assets/icons/github.png"
+      /></a>
+      <a href="mailto:e.emman129@gmail.com" target="_blank"
+        ><img src="@/assets/icons/email.png"
+      /></a>
     </div>
 
     <ContactForm />
@@ -57,8 +63,6 @@ export default {
 .icons > * > * {
   width: 64px;
   height: 64px;
-
-  background-color: #c4c4c4;
 
   margin-right: 32px;
 }
