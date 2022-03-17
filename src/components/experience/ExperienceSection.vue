@@ -78,7 +78,8 @@ export default {
 .experience-card {
   border-left: 8px solid var(--darker-blue);
 
-  width: 896px;
+  width: 100%;
+  max-width: 896px;
 
   padding: 8px 72px 24px 32px;
   margin: 0 auto 32px;
