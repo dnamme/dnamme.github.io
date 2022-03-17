@@ -104,4 +104,13 @@ h6,
 .accented-heading {
   color: var(--primary-blue);
 }
+
+.sticky-title {
+  position: sticky;
+  top: 0;
+
+  padding-bottom: 32px;
+
+  background: linear-gradient(to bottom, #fafafc80 50%, transparent);
+}
 </style>

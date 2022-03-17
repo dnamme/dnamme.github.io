@@ -146,10 +146,7 @@ export default {
 }
 
 .sticky-title {
-  position: sticky;
-  top: 0;
-
-  margin: 0 0 32px 64px;
+  margin: 0 0 0 64px;
 }
 
 .project-link {
