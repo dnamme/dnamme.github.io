@@ -37,7 +37,7 @@ export default {
 #contact {
   max-width: 1440px;
 
-  padding: 64px 0 256px;
+  padding: 64px 0 128px;
 
   display: flex;
   flex-flow: column nowrap;
@@ -47,10 +47,14 @@ export default {
 
 .heading {
   margin: 0 0 64px;
+
+  text-align: center;
 }
 
 .desc {
   margin: 0 0 32px;
+
+  text-align: center;
 }
 
 .icons {
@@ -69,5 +73,33 @@ export default {
 
 .icons > *:last-child > * {
   margin-right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  #contact {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #contact {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #contact {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #contact {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 </style>

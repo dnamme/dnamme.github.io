@@ -33,4 +33,33 @@ export default {
 
   font-size: 114.44px;
 }
+
+@media screen and (max-width: 1200px) {
+  #about {
+    max-width: unset;
+    padding: 0 64px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #about {
+    padding: 0 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about {
+    padding: 0 32px;
+  }
+
+  .title {
+    word-break: break-all;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #about {
+    padding: 0 24px;
+  }
+}
 </style>

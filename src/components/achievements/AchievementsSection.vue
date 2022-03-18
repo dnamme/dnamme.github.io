@@ -134,4 +134,45 @@ export default {
 
   text-align: center;
 }
+
+@media screen and (max-width: 1200px) {
+  .sticky-title {
+    margin-left: 48px;
+  }
+
+  #achievements-wrapper {
+    column-gap: 64px;
+
+    padding: 0 48px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sticky-title {
+    margin-left: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sticky-title {
+    margin-left: 24px;
+  }
+
+  #achievements-wrapper {
+    padding: 0 32px;
+
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sticky-title {
+    margin-left: 16px;
+  }
+
+  #achievements-wrapper {
+    padding: 0 24px;
+  }
+}
 </style>

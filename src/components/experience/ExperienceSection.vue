@@ -4,26 +4,28 @@
       ... <span class="h2 accented-heading">among other things</span>.
     </h2>
 
-    <div
-      v-for="(experience, index) in experiences"
-      :key="`experience-${index}`"
-      class="experience-card"
-    >
-      <h6 class="exp-title">{{ experience.title }}</h6>
-      <p class="exp-details">
-        <a
-          v-if="experience.company_website"
-          class="exp-company"
-          :href="experience.company_website"
-          target="_blank"
-          >{{ experience.company }} <ExternalLink color="#03254c"
-        /></a>
-        <span v-else> {{ experience.company }} </span>
-        &bull;
-        {{ experience.date }}
-      </p>
+    <div id="experiences-wrapper">
+      <div
+        v-for="(experience, index) in experiences"
+        :key="`experience-${index}`"
+        class="experience-card"
+      >
+        <h6 class="exp-title">{{ experience.title }}</h6>
+        <p class="exp-details">
+          <a
+            v-if="experience.company_website"
+            class="exp-company"
+            :href="experience.company_website"
+            target="_blank"
+            >{{ experience.company }} <ExternalLink color="#03254c"
+          /></a>
+          <span v-else> {{ experience.company }} </span>
+          &bull;
+          {{ experience.date }}
+        </p>
 
-      <p class="exp-description">{{ experience.desc }}</p>
+        <p class="exp-description">{{ experience.desc }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -111,5 +113,41 @@ export default {
 
 .experience-card .exp-description {
   margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .sticky-title {
+    margin-left: 48px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sticky-title {
+    margin-left: 32px;
+  }
+
+  #experiences-wrapper {
+    padding: 0 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sticky-title {
+    margin-left: 24px;
+  }
+
+  #experiences-wrapper {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sticky-title {
+    margin-left: 16px;
+  }
+
+  #experiences-wrapper {
+    padding: 0 24px;
+  }
 }
 </style>

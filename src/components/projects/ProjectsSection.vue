@@ -239,4 +239,89 @@ export default {
 .gamedev-project-details-wrapper > .project-description {
   margin: 0 0 32px;
 }
+
+@media screen and (max-width: 1200px) {
+  .sticky-title {
+    margin-left: 48px;
+  }
+
+  .webdev-project-wrapper {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
+  .gamedev-project-wrapper {
+    margin-left: 64px;
+    margin-right: 64px;
+
+    column-gap: 64px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sticky-title {
+    margin-left: 32px;
+  }
+
+  .webdev-project-wrapper {
+    margin-left: 48px;
+    margin-right: 48px;
+
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img"
+      "txt";
+    row-gap: 32px;
+  }
+
+  .gamedev-project-wrapper {
+    margin-left: 48px;
+    margin-right: 48px;
+
+    column-gap: 32px;
+  }
+
+  .gamedev-project-wrapper .project-img-wrapper {
+    object-position: unset !important;
+    max-height: unset !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sticky-title {
+    margin-left: 24px;
+  }
+
+  .webdev-project-wrapper {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .gamedev-project-wrapper {
+    margin-left: 32px;
+    margin-right: 32px;
+
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img"
+      "txt";
+    row-gap: 32px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sticky-title {
+    margin-left: 16px;
+  }
+
+  .webdev-project-wrapper {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .gamedev-project-wrapper {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
 </style>
