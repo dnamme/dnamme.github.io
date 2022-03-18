@@ -117,7 +117,7 @@ export default {
         },
         {
           title: "Slime'D",
-          desc: "As a gravity-defying slimeball, the player must try to sruvive for as long as they can while avoiding spikes. This was made using Arduino.",
+          desc: "As a gravity-defying slimeball, the player must try to survive for as long as they can while avoiding spikes. This was made using Arduino.",
           static_img: "gamedev/slimed.jpg",
           static_img_style: {
             maxHeight: "240px",
