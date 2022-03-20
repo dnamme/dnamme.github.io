@@ -11,9 +11,11 @@
         :key="`web-project-${index}`"
         class="webdev-project-wrapper"
       >
+        <div class="project-img-wrapper" v-if="project.videos"></div>
         <img
           :src="require(`@/assets/${project.static_img}`)"
           class="project-img-wrapper"
+          v-else
         />
 
         <div class="webdev-project-details-wrapper">
@@ -44,12 +46,25 @@
         :key="`game-project-${index}`"
         class="gamedev-project-wrapper"
       >
+        <video
+          v-if="project.video"
+          class="project-img-wrapper"
+          autoplay
+          loop
+          muted
+        >
+          <source
+            :src="require(`@/assets/${project.video}`)"
+            type="video/mp4"
+          />
+        </video>
         <img
           :src="require(`@/assets/${project.static_img}`)"
           class="project-img-wrapper"
           :style="
             project.static_img_style !== null ? project.static_img_style : {}
           "
+          v-else
         />
 
         <div class="gamedev-project-details-wrapper">
@@ -82,6 +97,7 @@ export default {
   components: { ExternalLink },
   data() {
     return {
+      update_video: null,
       web_dev_projs: [
         {
           title: "Enlistment Scheduler",
@@ -106,6 +122,7 @@ export default {
           static_img_style: {
             maxHeight: "256px",
           },
+          video: "gamedev/ma10mon-cs.mp4",
           website: "https://dnamme.github.io/math-10-integrating-project",
           github: "https://github.com/dnamme/math-10-integrating-project",
         },
@@ -128,11 +145,13 @@ export default {
           title: "Skiula's Chamber",
           desc: "Skiula, the evil skeleton boss, has trapped these players inside his castle. Players must survive for a total of three minutes in order to win. Play singleplayer or win together with friends!",
           static_img: "gamedev/skiulas-chamber.png",
+          video: "gamedev/skiulas-chamber.mp4",
         },
         {
           title: "Sample Animation",
           desc: "This features the day and night cycle of Japan's Mt. Fuji in all its glory.",
           static_img: "gamedev/fuji.png",
+          video: "gamedev/fuji.mp4",
         },
       ],
     };
@@ -179,7 +198,7 @@ export default {
   margin-bottom: 0;
 }
 
-.webdev-project-wrapper > img {
+.webdev-project-wrapper .project-img-wrapper {
   width: 100%;
   grid-area: img;
 }
@@ -213,13 +232,17 @@ export default {
   margin-bottom: 0;
 }
 
-.gamedev-project-wrapper > img {
+.gamedev-project-wrapper .project-img-wrapper {
   width: 100%;
 
   object-fit: cover;
   object-position: 0 top;
 
   grid-area: img;
+}
+
+.gamedev-project-wrapper .project-img-wrapper > * {
+  width: 100%;
 }
 
 .gamedev-project-details-wrapper {

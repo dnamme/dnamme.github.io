@@ -17,7 +17,7 @@
           class="achievement-link"
         >
           <h6 class="achievement-title">
-            {{ achievement.title }} <ExternalLink color="#03254c" size="24" />
+            {{ achievement.title }} <ExternalLink color="#03254c" :size="24" />
           </h6>
         </a>
 
