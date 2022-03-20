@@ -122,6 +122,7 @@ export default {
           static_img_style: {
             maxHeight: "256px",
           },
+          video: "gamedev/ma10mon-cs.mp4",
           website: "https://dnamme.github.io/math-10-integrating-project",
           github: "https://github.com/dnamme/math-10-integrating-project",
         },
