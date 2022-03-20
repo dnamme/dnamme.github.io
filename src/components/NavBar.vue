@@ -129,6 +129,10 @@ nav > *:not(:nth-child(1)) {
     justify-content: flex-start;
   } */
 
+  nav {
+    display: none;
+  }
+
   nav:hover {
     right: calc(-100vw + 128px + 48px) !important;
     background-color: unset;

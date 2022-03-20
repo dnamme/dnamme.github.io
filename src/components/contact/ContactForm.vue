@@ -61,7 +61,12 @@ export default {
   },
   methods: {
     checkFields() {
-      if (!this.email || !this.name || !this.subject || !this.message) {
+      if (
+        !this.email.trim() ||
+        !this.name.trim() ||
+        !this.subject.trim() ||
+        !this.message.trim()
+      ) {
         alert("Please make sure that all fields are filled in correctly.");
         return false;
       }
@@ -155,5 +160,23 @@ button {
 button[disabled] {
   color: #888888;
   background-color: #d8d8d8;
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+  #contact-form {
+    padding: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #contact-form {
+    padding: 32px;
+  }
+}
+
+@media screen and (max-width: 576px) {
 }
 </style>

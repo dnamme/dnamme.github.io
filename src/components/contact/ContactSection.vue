@@ -77,29 +77,46 @@ export default {
 
 @media screen and (max-width: 1200px) {
   #contact {
-    padding-left: 64px;
-    padding-right: 64px;
+    padding: 64px;
+  }
+
+  .icons {
+    margin-bottom: 100px;
   }
 }
 
 @media screen and (max-width: 992px) {
   #contact {
-    padding-left: 48px;
-    padding-right: 48px;
+    padding: 48px 48px 64px;
+  }
+
+  .icons {
+    margin-bottom: 80px;
   }
 }
 
 @media screen and (max-width: 768px) {
   #contact {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 32px 32px 64px;
+  }
+
+  .icons {
+    margin-bottom: 72px;
+  }
+
+  .icons > * > * {
+    width: 48px;
+    height: 48px;
   }
 }
 
 @media screen and (max-width: 576px) {
   #contact {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 24px 24px 48px;
+  }
+
+  .icons {
+    margin-bottom: 64px;
   }
 }
 </style>

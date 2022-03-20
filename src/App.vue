@@ -116,8 +116,51 @@ h6,
   position: sticky;
   top: 0;
 
-  padding-bottom: 32px;
+  padding: 0 0 32px 64px;
 
-  background: linear-gradient(to bottom, #fafafc80 50%, transparent);
+  background: linear-gradient(to bottom, #fafafc50 50%, transparent);
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+  *,
+  .bodyText {
+    font-size: 16px;
+  }
+  h1,
+  .h1 {
+    font-size: 61.04px;
+  }
+  h2,
+  .h2 {
+    font-size: 48.83px;
+  }
+  h3,
+  .h3 {
+    font-size: 39.06px;
+  }
+  h4,
+  .h4 {
+    font-size: 31.25px;
+  }
+  h5,
+  .h5 {
+    font-size: 25px;
+  }
+  h6,
+  .h6 {
+    font-size: 20px;
+  }
+  .captionText {
+    font-size: 12.8px;
+  }
 }
 </style>

@@ -19,6 +19,8 @@ export default {
 #about {
   max-width: 1080px;
 
+  padding: 32px 0;
+
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -37,29 +39,30 @@ export default {
 @media screen and (max-width: 1200px) {
   #about {
     max-width: unset;
-    padding: 0 64px;
+    padding: 32px 64px;
   }
 }
 
 @media screen and (max-width: 992px) {
   #about {
-    padding: 0 48px;
+    padding: 32px 48px;
   }
 }
 
 @media screen and (max-width: 768px) {
   #about {
-    padding: 0 32px;
-  }
-
-  .title {
-    word-break: break-all;
+    padding: 32px 32px;
   }
 }
 
 @media screen and (max-width: 576px) {
   #about {
-    padding: 0 24px;
+    padding: 32px 24px;
+  }
+
+  .title {
+    font-size: 76.29px;
+    word-break: break-all;
   }
 }
 </style>
