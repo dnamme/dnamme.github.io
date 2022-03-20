@@ -46,18 +46,18 @@
         :key="`game-project-${index}`"
         class="gamedev-project-wrapper"
       >
-        <div v-if="project.videos">
-          <video
-            v-for="(video, videoIndex) in project.videos"
-            :key="`game-project-${index}-video-${videoIndex}`"
-            class="project-img-wrapper"
-            style="display: none"
-            muted
-            :ref="`game_project_${index}_video_${videoIndex}`"
-          >
-            <source :src="require(`@/assets/${video}`)" type="video/mp4" />
-          </video>
-        </div>
+        <video
+          v-if="project.video"
+          class="project-img-wrapper"
+          autoplay
+          loop
+          muted
+        >
+          <source
+            :src="require(`@/assets/${project.video}`)"
+            type="video/mp4"
+          />
+        </video>
         <img
           :src="require(`@/assets/${project.static_img}`)"
           class="project-img-wrapper"
@@ -144,65 +144,16 @@ export default {
           title: "Skiula's Chamber",
           desc: "Skiula, the evil skeleton boss, has trapped these players inside his castle. Players must survive for a total of three minutes in order to win. Play singleplayer or win together with friends!",
           static_img: "gamedev/skiulas-chamber.png",
-          videos: [
-            "gamedev/skiulas-chamber/01.mp4",
-            "gamedev/skiulas-chamber/02.mp4",
-            "gamedev/skiulas-chamber/03.mp4",
-            "gamedev/skiulas-chamber/04.mp4",
-            "gamedev/skiulas-chamber/05.mp4",
-          ],
-          video_index: -1,
+          video: "gamedev/skiulas-chamber.mp4",
         },
         {
           title: "Sample Animation",
           desc: "This features the day and night cycle of Japan's Mt. Fuji in all its glory.",
           static_img: "gamedev/fuji.png",
-          videos: [
-            "gamedev/fuji/01.mp4",
-            "gamedev/fuji/02.mp4",
-            "gamedev/fuji/03.mp4",
-            "gamedev/fuji/04.mp4",
-          ],
-          video_index: -1,
+          video: "gamedev/fuji.mp4",
         },
       ],
     };
-  },
-  mounted() {
-    this.updateVideos();
-    this.update_video = setInterval(this.updateVideos, 1 * 1000);
-  },
-  unmounted() {
-    clearInterval(this.update_video);
-  },
-  methods: {
-    updateVideos() {
-      for (let i = 0; i < this.game_dev_projs.length; i++) {
-        if (!this.game_dev_projs[i].videos) continue;
-
-        if (this.game_dev_projs[i].video_index >= 0)
-          this.$refs[
-            `game_project_${i}_video_${this.game_dev_projs[i].video_index}`
-          ][0].style.display = "none";
-
-        this.game_dev_projs[i].video_index++;
-        if (
-          this.game_dev_projs[i].video_index >=
-          this.game_dev_projs[i].videos.length
-        )
-          this.game_dev_projs[i].video_index = 0;
-
-        this.$refs[
-          `game_project_${i}_video_${this.game_dev_projs[i].video_index}`
-        ][0].style.display = "block";
-        this.$refs[
-          `game_project_${i}_video_${this.game_dev_projs[i].video_index}`
-        ][0].currentTime = 0;
-        this.$refs[
-          `game_project_${i}_video_${this.game_dev_projs[i].video_index}`
-        ][0].play();
-      }
-    },
   },
 };
 </script>
