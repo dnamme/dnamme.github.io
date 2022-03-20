@@ -74,7 +74,7 @@ export default {
 }
 
 .sticky-title {
-  margin: 0 0 32px 64px;
+  margin: 0 0 32px;
 }
 
 .experience-card {
@@ -83,7 +83,7 @@ export default {
   width: 100%;
   max-width: 896px;
 
-  padding: 8px 72px 24px 32px;
+  padding: 8px 64px 24px 32px;
   margin: 0 auto 32px;
 
   background-color: var(--lighter-blue);
@@ -116,38 +116,72 @@ export default {
 }
 
 @media screen and (max-width: 1200px) {
+  #experience {
+    padding-bottom: 96px;
+  }
+
   .sticky-title {
-    margin-left: 48px;
+    padding-left: 48px;
+    margin-bottom: 24px;
   }
 }
 
 @media screen and (max-width: 992px) {
+  #experience {
+    padding-bottom: 80px;
+  }
+
   .sticky-title {
-    margin-left: 32px;
+    padding-left: 32px;
+    margin-bottom: 16px;
   }
 
   #experiences-wrapper {
     padding: 0 48px;
   }
+
+  .experience-card {
+    padding: 8px 32px 24px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  #experience {
+    padding-bottom: 72px;
+  }
+
   .sticky-title {
-    margin-left: 24px;
+    padding-left: 24px;
+    margin-bottom: 8px;
   }
 
   #experiences-wrapper {
     padding: 0 32px;
   }
+
+  .experience-card {
+    padding: 8px 24px 24px;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  #experience {
+    padding-bottom: 64px;
+  }
+
   .sticky-title {
-    margin-left: 16px;
+    padding-left: 16px;
+    margin-bottom: 0;
   }
 
   #experiences-wrapper {
     padding: 0 24px;
+  }
+
+  .experience-card {
+    border-left: 4px solid var(--darker-blue);
+
+    padding: 8px 16px 16px;
   }
 }
 </style>

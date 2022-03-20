@@ -146,7 +146,7 @@ export default {
 }
 
 .sticky-title {
-  margin: 0 0 0 64px;
+  margin: 0;
 }
 
 .project-link {
@@ -242,12 +242,20 @@ export default {
 
 @media screen and (max-width: 1200px) {
   .sticky-title {
-    margin-left: 48px;
+    padding-left: 48px;
+  }
+
+  #webdev {
+    padding-bottom: 96px;
   }
 
   .webdev-project-wrapper {
     margin-left: 64px;
     margin-right: 64px;
+  }
+
+  #gamedev {
+    padding-bottom: 96px;
   }
 
   .gamedev-project-wrapper {
@@ -260,7 +268,11 @@ export default {
 
 @media screen and (max-width: 992px) {
   .sticky-title {
-    margin-left: 32px;
+    padding-left: 32px;
+  }
+
+  #webdev {
+    padding-bottom: 80px;
   }
 
   .webdev-project-wrapper {
@@ -272,6 +284,10 @@ export default {
       "img"
       "txt";
     row-gap: 32px;
+  }
+
+  #gamedev {
+    padding-bottom: 80px;
   }
 
   .gamedev-project-wrapper {
@@ -289,12 +305,20 @@ export default {
 
 @media screen and (max-width: 768px) {
   .sticky-title {
-    margin-left: 24px;
+    padding-left: 24px;
+  }
+
+  #webdev {
+    padding-bottom: 72px;
   }
 
   .webdev-project-wrapper {
     margin-left: 32px;
     margin-right: 32px;
+  }
+
+  #gamedev {
+    padding-bottom: 72px;
   }
 
   .gamedev-project-wrapper {
@@ -311,12 +335,20 @@ export default {
 
 @media screen and (max-width: 576px) {
   .sticky-title {
-    margin-left: 16px;
+    padding-left: 16px;
+  }
+
+  #webdev {
+    padding-bottom: 64px;
   }
 
   .webdev-project-wrapper {
     margin-left: 24px;
     margin-right: 24px;
+  }
+
+  #gamedev {
+    padding-bottom: 64px;
   }
 
   .gamedev-project-wrapper {

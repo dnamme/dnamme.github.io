@@ -56,6 +56,7 @@ export default {
         {
           title: "CompSAt Blue Hacks 2021",
           website: "https://www.facebook.com/BlueHacksAdMU",
+          team: "FEKK",
           position: "Finalist",
         },
         {
@@ -78,7 +79,7 @@ export default {
 }
 
 .sticky-title {
-  margin: 0 0 32px 64px;
+  margin: 0 0 32px;
 }
 
 #achievements-wrapper {
@@ -136,8 +137,13 @@ export default {
 }
 
 @media screen and (max-width: 1200px) {
+  #achievements {
+    padding-bottom: 96px;
+  }
+
   .sticky-title {
-    margin-left: 48px;
+    padding-left: 48px;
+    margin-bottom: 24px;
   }
 
   #achievements-wrapper {
@@ -148,14 +154,24 @@ export default {
 }
 
 @media screen and (max-width: 992px) {
+  #achievements {
+    padding-bottom: 80px;
+  }
+
   .sticky-title {
-    margin-left: 32px;
+    padding-left: 32px;
+    margin-bottom: 16px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  #achievements {
+    padding-bottom: 72px;
+  }
+
   .sticky-title {
-    margin-left: 24px;
+    padding-left: 24px;
+    margin-bottom: 8px;
   }
 
   #achievements-wrapper {
@@ -167,8 +183,13 @@ export default {
 }
 
 @media screen and (max-width: 576px) {
+  #achievements {
+    padding-bottom: 64px;
+  }
+
   .sticky-title {
-    margin-left: 16px;
+    padding-left: 16px;
+    margin-bottom: 0;
   }
 
   #achievements-wrapper {
