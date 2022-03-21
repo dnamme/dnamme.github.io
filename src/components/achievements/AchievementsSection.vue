@@ -56,7 +56,7 @@ export default {
         {
           title: "CompSAt Blue Hacks 2021",
           website: "https://www.facebook.com/BlueHacksAdMU",
-          team: "FEKK",
+          team: "FECK",
           position: "Finalist",
         },
         {
