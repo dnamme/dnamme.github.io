@@ -40,10 +40,17 @@ export default {
     return {
       experiences: [
         {
+          title: "Digital Development Editor for Technology",
+          company: "The GUIDON",
+          company_website: "https://theguidon.com",
+          date: "Since June 2022",
+          desc: "",
+        },
+        {
           title: "Digital Development Staffer, Developer",
           company: "The GUIDON",
           company_website: "https://theguidon.com",
-          date: "Since October 2021",
+          date: "October 2021 to May 2022",
           desc: "Creates interactive articles under the organization using modern frameworks.",
         },
         {
