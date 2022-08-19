@@ -100,6 +100,12 @@ export default {
       update_video: null,
       web_dev_projs: [
         {
+          title: "The GUIDON Main",
+          desc: "A complete revamp overhaul of the main website of The GUIDON. This project uses Google Sheets and WordPress.",
+          static_img: "webdev/tgdn_main.png",
+          website: "https://theguidon.com",
+        },
+        {
           title: "Enlistment Scheduler",
           desc: "This web application makes enlistment and scheduling a lot easier for Ateneo students by showing a preview of the user's schedule as they enter and choose classes.",
           static_img: "webdev/enlistment_scheduler.png",

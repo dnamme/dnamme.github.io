@@ -44,7 +44,7 @@ export default {
           company: "The GUIDON",
           company_website: "https://theguidon.com",
           date: "Since June 2022",
-          desc: "",
+          desc: "Manages the staffers who are in charge of creating interactive articles for The GUIDON. The Editor for Technology is also responsible for managing and collaborating with other staffs, potentially building projects that help the publiclation overall.",
         },
         {
           title: "Digital Development Staffer, Developer",
