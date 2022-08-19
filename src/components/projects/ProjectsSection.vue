@@ -101,7 +101,7 @@ export default {
       web_dev_projs: [
         {
           title: "The GUIDON Main",
-          desc: "A complete revamp overhaul of the main website of The GUIDON. This project uses Google Sheets and WordPress.",
+          desc: "A complete revamp and overhaul of the main website of The GUIDON. This project uses Google Sheets and WordPress.",
           static_img: "webdev/tgdn_main.png",
           website: "https://theguidon.com",
         },
