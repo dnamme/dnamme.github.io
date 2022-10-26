@@ -106,6 +106,18 @@ export default {
           website: "https://theguidon.com",
         },
         {
+          title: "UAAP Season 85 Primer Volume 1",
+          desc: "The digital version of the UAAP Season 85 Primer Volume 1 published under The GUIDON.",
+          static_img: "webdev/uaap_85_primer_volume_1.png",
+          website: "https://tgdn.co/UAAP85PrimerVolume1",
+        },
+        {
+          title: "A House Divided",
+          desc: "An interactive article that features multiple individuals across different sectors and their opinions on President Marcos Jr. and his first 100 days in office.",
+          static_img: "webdev/a_house_divided.png",
+          website: "https://interactive.theguidon.com/2022/10/a-house-divided",
+        },
+        {
           title: "Enlistment Scheduler",
           desc: "This web application makes enlistment and scheduling a lot easier for Ateneo students by showing a preview of the user's schedule as they enter and choose classes.",
           static_img: "webdev/enlistment_scheduler.png",
