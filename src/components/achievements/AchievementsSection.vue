@@ -42,6 +42,12 @@ export default {
     return {
       achievements: [
         {
+          title: "2022 ICPC Asia Manila Regionals",
+          website: "http://penoy.admu.edu.ph/domjudge/",
+          team: "heappopotamus",
+          position: "14th overall",
+        },
+        {
           title: "2021 ICPC Asia Jakarta Regionals",
           website: "https://competition.binus.ac.id/contest/public",
           team: "dudeparecode",
