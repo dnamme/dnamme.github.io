@@ -106,6 +106,12 @@ export default {
           website: "https://theguidon.com",
         },
         {
+          title: "Dead End",
+          desc: "Dead End is an interactive article that tackles the hardships of commuters in their day to day lives in an attempt to magnify their voices.",
+          static_img: "webdev/dead_end.png",
+          website: "https://interactive.theguidon.com/2023/05/dead-end",
+        },
+        {
           title: "UAAP Season 85 Primer Volume 1",
           desc: "The digital version of the UAAP Season 85 Primer Volume 1 published under The GUIDON.",
           static_img: "webdev/uaap_85_primer_volume_1.png",
