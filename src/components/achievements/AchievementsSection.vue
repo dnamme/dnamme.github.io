@@ -42,6 +42,12 @@ export default {
     return {
       achievements: [
         {
+          title: "Google Developer Student Clubs Hackfest 2023",
+          website: "https://www.gdscloyola.org/",
+          team: "5kea",
+          position: "1st place",
+        },
+        {
           title: "2022 ICPC Asia Manila Regionals",
           website: "http://penoy.admu.edu.ph/domjudge/",
           team: "heappopotamus",
