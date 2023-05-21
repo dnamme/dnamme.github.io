@@ -106,6 +106,12 @@ export default {
           website: "https://theguidon.com",
         },
         {
+          title: "Year-End Gallery",
+          desc: "The Year-End Gallery revisits the various events experienced by the Ateneo community during the A.Y. 2022-2023, following the return of onsite classes.",
+          static_img: "webdev/year_end_gallery.png",
+          website: "https://interactive.theguidon.com/2023/05/year-end-gallery",
+        },
+        {
           title: "Dead End",
           desc: "Dead End is an interactive article that tackles the hardships of commuters in their day to day lives in an attempt to magnify their voices.",
           static_img: "webdev/dead_end.png",
