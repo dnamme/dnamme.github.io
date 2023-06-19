@@ -106,6 +106,12 @@ export default {
           website: "https://theguidon.com",
         },
         {
+          title: "EpiMetrics Inc.",
+          desc: "A freelance project wherein the old website had to be recreated as a brand new WordPress website. The back-end had to be restructured and the theme was created from scratch.",
+          static_img: "webdev/epimetrics.png",
+          website: "https://epimetrics.com.ph",
+        },
+        {
           title: "Year-End Gallery",
           desc: "The Year-End Gallery revisits the various events experienced by the Ateneo community during the A.Y. 2022-2023, following the return of onsite classes.",
           static_img: "webdev/year_end_gallery.png",
