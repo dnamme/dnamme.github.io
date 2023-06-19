@@ -40,10 +40,17 @@ export default {
     return {
       experiences: [
         {
+          title: "Design Executive Editor",
+          company: "The GUIDON",
+          company_website: "https://theguidon.com",
+          date: "Since June 2023",
+          desc: "The Design Executive oversees the entire Design Cluster and Multimedia arm of the publication: from branding, to broadsheet issues, videos, photos, websites, and illustrations.",
+        },
+        {
           title: "Digital Development Editor for Technology",
           company: "The GUIDON",
           company_website: "https://theguidon.com",
-          date: "Since June 2022",
+          date: "June 2022 to May 2023",
           desc: "Manages the staffers who are in charge of creating interactive articles for The GUIDON. The Editor for Technology is also responsible for managing and collaborating with other staffs, potentially building projects that help the publiclation overall.",
         },
         {
