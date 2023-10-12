@@ -106,6 +106,12 @@ export default {
           website: "https://theguidon.com",
         },
         {
+          title: "TALAB 2023",
+          desc: "TALAB is an annual event of the Ateneo de Manila University filled with talks, workshops, and events.",
+          static_img: "webdev/talab-2023.png",
+          website: "https://ateneotalab.online",
+        },
+        {
           title: "EpiMetrics Inc.",
           desc: "A freelance project wherein the old website had to be recreated as a brand new WordPress website. The back-end had to be restructured and the theme was created from scratch.",
           static_img: "webdev/epimetrics.png",
