@@ -142,19 +142,24 @@ export default {
           website: "https://interactive.theguidon.com/2022/10/a-house-divided",
         },
         {
-          title: "Enlistment Scheduler",
-          desc: "This web application makes enlistment and scheduling a lot easier for Ateneo students by showing a preview of the user's schedule as they enter and choose classes.",
-          static_img: "webdev/enlistment_scheduler.png",
-          website: "https://dnamme.github.io/enlistment-scheduler",
-          github: "https://github.com/dnamme/enlistment-scheduler",
+          title: "Flood Guard Calbayog",
+          desc: "A web application and proof-of-concept for the LGU of Calbayog, Samar, that efficiently calculates flooding risks and creates respective heatmaps.",
+          static_img: "webdev/flood_guard_calbayog.png",
         },
-        {
-          title: "TakBlue",
-          desc: "TakBlue is a small application for Ateneo students that calculates the distance and the time that it takes to go from one class to another.",
-          static_img: "webdev/takblue.png",
-          website: "https://dnamme.github.io/takblue",
-          github: "https://github.com/dnamme/takblue",
-        },
+        // {
+        //   title: "Enlistment Scheduler",
+        //   desc: "This web application makes enlistment and scheduling a lot easier for Ateneo students by showing a preview of the user's schedule as they enter and choose classes.",
+        //   static_img: "webdev/enlistment_scheduler.png",
+        //   website: "https://dnamme.github.io/enlistment-scheduler",
+        //   github: "https://github.com/dnamme/enlistment-scheduler",
+        // },
+        // {
+        //   title: "TakBlue",
+        //   desc: "TakBlue is a small application for Ateneo students that calculates the distance and the time that it takes to go from one class to another.",
+        //   static_img: "webdev/takblue.png",
+        //   website: "https://dnamme.github.io/takblue",
+        //   github: "https://github.com/dnamme/takblue",
+        // },
       ],
       game_dev_projs: [
         {
