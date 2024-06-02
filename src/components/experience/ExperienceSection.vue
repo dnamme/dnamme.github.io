@@ -50,7 +50,7 @@ export default {
           title: "Design Executive Editor",
           company: "The GUIDON",
           company_website: "https://theguidon.com",
-          date: "Since June 2023",
+          date: "June 2023 to June 2024",
           desc: "The Design Executive oversees the entire Design Cluster and Multimedia arm of the publication: from branding, to broadsheet issues, videos, photos, websites, and illustrations.",
         },
         {

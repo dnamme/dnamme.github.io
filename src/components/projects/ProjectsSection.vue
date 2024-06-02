@@ -101,9 +101,21 @@ export default {
       web_dev_projs: [
         {
           title: "The GUIDON Main",
-          desc: "A complete revamp and overhaul of the main website of The GUIDON. This project uses Google Sheets and WordPress.",
+          desc: "A complete revamp and overhaul of the main website of The GUIDON. This project uses WordPress and was finished in under 1.5 months.",
           static_img: "webdev/tgdn_main.png",
           website: "https://theguidon.com",
+        },
+        {
+          title: "Vantage Magazine",
+          desc: "A complete redesign of the magazine counterpart of The GUIDON. The project uses WordPress as its CMS and was finished in just 1 week.",
+          static_img: "webdev/vantmag.png",
+          website: "https://vantage.theguidon.com",
+        },
+        {
+          title: "The GUIDON Interactive",
+          desc: "A complete redesign of The GUIDON Interactive, the repository of interactive and immersive articles of the publication. Internal processes were also reformed, with Google Sheets being retired and the release of a newly developed headless WordPress CMS for its databases.",
+          static_img: "webdev/tgdn_interactive.png",
+          website: "https://interactive.theguidon.com",
         },
         {
           title: "TALAB 2023",
